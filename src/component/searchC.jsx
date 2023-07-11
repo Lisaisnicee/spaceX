@@ -11,17 +11,21 @@ function SearchC() {
     const url = 'https://api.spacexdata.com/v4/crew';
     try {
       
+
+
+        
       const response = await axios.get(url);
       console.log('data', response)
-      setData({name: response.data.name,
-        agency :response.data.agency ,
-        image : response.data.image,
-        wikipedia :response.data.wikipedia ,
-        launches :response.data.launches[0],
-        status : response.data.status ,
-        id :response.data.id ,
-    })
-      
+    //   setData({name: response.data.name,
+        // agency :response.data.agency ,
+        // image : response.data.image,
+        // wikipedia :response.data.wikipedia ,
+    //   
+        // status : response.data.status ,
+        // id :response.data.id ,
+    // })
+    //   
+    setData(response.data);
       
       setError(null);
     } catch (error) {
@@ -41,23 +45,56 @@ function SearchC() {
     return <div>Loading...</div>;
   }
 
-  return (
-    <>
-    
-    <div>
-       {/* Afficher les données */}
-       {data && (
-           <ul>
-               {data.map((item) => (
-                   <li key={item.id}>{item.name}</li>
-               ))}
-           </ul>
-       )}
-   </div>
-    
+  
+  return (<>
+     <div>
+            {/* Afficher les données */}
+            {data && (
+                <ul>
+                    {data.map((item) => (
+                        <li key={item.id}>{item.name}</li>
+                    ))}
+                </ul>
+            )}
+        </div>
+   
+   
+</>);
 
-    </>
-  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
 }
 
 export default SearchC;
