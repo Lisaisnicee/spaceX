@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import '../styles/css/main.css'
 
 function SearchC() {
   const [data, setData] = useState(null);
@@ -16,15 +17,6 @@ function SearchC() {
         
       const response = await axios.get(url);
       console.log('data', response)
-    //   setData({name: response.data.name,
-        // agency :response.data.agency ,
-        // image : response.data.image,
-        // wikipedia :response.data.wikipedia ,
-    //   
-        // status : response.data.status ,
-        // id :response.data.id ,
-    // })
-    //   
     setData(response.data);
       
       setError(null);
@@ -47,16 +39,26 @@ function SearchC() {
 
   
   return (<>
-     <div>
+     <section class='gallery'>
             {/* Afficher les données */}
             {data && (
-                <ul>
+                <>
                     {data.map((item) => (
-                        <li key={item.id}>{item.name}</li>
+                            <ol class='image-list grid-view'>
+                              <li>
+                                <figure>
+                                  <img src={item.image} alt='' />
+                                  <figcaption>
+                                    <p>{item.name}</p>
+                                    <p>{item.agency}</p>
+                                  </figcaption>
+                                </figure>
+                              </li>
+                            </ol>
                     ))}
-                </ul>
+                </>
             )}
-        </div>
+        </section>
    
    
 </>);
