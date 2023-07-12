@@ -1,9 +1,13 @@
+import Navigation from '../layout/navigation';
 const Main = () => {
     return ( 
     <>
     
 <div>
- <h1>hello</h1>
+    <Navigation>
+    <h1>hello</h1>
+    </Navigation>
+
 </div>
     </>
      );
