@@ -20,6 +20,7 @@ const About = () => {
 
 <div class="page-wrapper">
   <aside>
+    
     <h1>{data.name}</h1>
   
     <p class="bio">{data.summary}</p>
@@ -27,15 +28,28 @@ const About = () => {
  
 <article>
   <div class="author">
-    <p>{data.founder}</p>
-    <p><span>{data.founded}</span></p>
-    <div class="line"></div>
+  <div class="line"><p>FOUNDER : {data.founder}</p></div>
+  <div class="line"> <p>FOUNDED IN : {data.founded}</p> </div>
+  <div class="line"> <p>NUMBER OF EMPLOYEES : {data.employees}</p></div>
+  <div class="line"> <p>NUMBER OF VEHICULES: {data.vehicules}</p></div>
+  <div class="line"> <p>NUMBER OF LAUNCH SITES: {data.launch_sites}</p></div>
+  <div class="line"> <p>NUMBER OF TEST SITES: {data.test_sites}</p></div>
+  <br></br>
+  <div class="line"> <p>CEO: {data.ceo}</p></div>
+  <div class="line"> <p>CTO: {data.cto}</p></div>
+  <div class="line"> <p>COO: {data.coo}</p></div>
+  <div class="line"> <p>CTO PROPULSION: {data.cto_propulsion}</p></div>
+  <div class="line"> <p>VALUATION: {data.valuation}</p></div>
   </div>
   <div class="photographer">
-    <p>{data.launch_sites}</p>
-    <p><span>{data.employees}</span></p>
-    <div class="line"></div>
+
+
+
+
+
   </div>
+  
+
   <div class="image"></div>
 </article>
 
