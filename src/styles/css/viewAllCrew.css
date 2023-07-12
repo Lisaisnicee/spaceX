@@ -1,0 +1,164 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color : white;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.member-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  
+  margin-right: 20px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #007bff;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input[type="text"] {
+  width: 700px; 
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.search-bar input[type="text"]::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search-bar input[type="text"]::placeholder {
+  color: #999999;
+}
+
+.search-bar input[type="text"]:focus {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#root {
+display: flex;
+justify-content: center;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.container {
+display: flex;
+justify-content: center;
+margin: 1rem;
+}
+
+.image-list.grid-view {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.card-body {
+max-width: 15rem;
+min-width: 15rem;
+border-radius: 4px;
+color: #fff;
+margin: 1.2rem;
+cursor: pointer;
+transition: all 0.2s ease-out;
+}
+
+.card-body:hover {
+box-shadow: 0 0 4em 0px rgba(14, 6, 154, 0.4);
+transform: scale(1.01);
+}
+
+.card-body:active {
+transform: scale(1.01) translateY(0.2rem);
+}
+
+.card-body > .section {
+min-height: 10.9rem;
+}
+
+.card-body > .icon-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card-body .icon {
+font-size: 3.5em;
+}
+
+.card-body > .text-wrapper {
+  padding: 2em;
+  font-family: 'Roboto';
+  background-color: rgb(15, 0, 86);
+  border-radius: 0 0 4px 4px;
+  height: 100px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-wrapper > .title {
+  font-size: 1em;
+  font-weight: bold;
+  color: blue;
+  margin-top: 0.5em; 
+  margin-bottom: .2em; 
+  line-height: 1.2;
+}
+
+.text-wrapper > .details {
+font-size: 0.8em;
+line-height: 1.7em;
+
+}

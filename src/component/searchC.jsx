@@ -1,102 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import '../styles/css/main.css'
+import React, { useState } from 'react';
+import DisplayCrew from '../component/displayCrew';
+import SearchBar from '../component/searchBar';
+import '../styles/css/viewAllCrew.css';
+import Fetcher from '../component/fetcher';
 
-function SearchC() {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+const SearchC = () => {
+  const [searchQuery, setSearchQuery] = useState('');
 
-
-  const fetchData = async () => {
-    const url = 'https://api.spacexdata.com/v4/crew';
-    try {
-      
-
-
-        
-      const response = await axios.get(url);
-      console.log('data', response)
-    setData(response.data);
-      
-      setError(null);
-    } catch (error) {
-      setError(error.message);
-    } finally {
-      setLoading(false);
-    }
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
   };
 
-  useEffect(() => {
-    fetchData('');
-  }, []);
+  const filteredCrewList = (data) =>
+    data.filter(
+      (crew) =>
+        crew.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        crew.agency.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
-  
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  
-  return (<>
-     <section class='gallery'>
-            {/* Afficher les données */}
-            {data && (
-                <>
-                    {data.map((item) => (
-                            <ol class='image-list grid-view'>
-                              <li>
-                                <figure>
-                                  <img src={item.image} alt='' />
-                                  <figcaption>
-                                    <p>{item.name}</p>
-                                    <p>{item.agency}</p>
-                                  </figcaption>
-                                </figure>
-                              </li>
-                            </ol>
-                    ))}
-                </>
-            )}
-        </section>
-   
-   
-</>);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-}
+  return (
+    <>
+      <SearchBar
+        value={searchQuery}
+        onChange={handleSearchChange}
+        placeholder="Search by name or agency"
+      />
+      <div className="container">
+        <Fetcher url="https://api.spacexdata.com/v4/crew" render={({ data }) => (
+          <ul className="image-list grid-view">
+            {filteredCrewList(data).map((item) => (
+              <DisplayCrew key={item.id} id={item.id} name={item.name} image={item.image} />
+            ))}
+          </ul>
+        )} />
+      </div>
+    </>
+  );
+};
 
 export default SearchC;
