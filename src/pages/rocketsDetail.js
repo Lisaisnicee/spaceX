@@ -1,39 +1,39 @@
 import React from "react";
-import Fetcher from "../component/fetcher";
-import RocketsDetail from "../component/rocketsDetail";
-import "../styles/css/rocketsDetail.css";
 import { useParams } from "react-router-dom";
-
-
+import Fetcher from "../component/fetcher";
+import "../styles/css/rocketsDetail.css";
 
 const ViewRocketsDetail = () => {
   const { id } = useParams();
+
   const renderRocketsDetail = ({ data }) => {
+    const rocket = data.find((rocket) => rocket.id === id);
+
+    if (!rocket) {
+      return <div>Rocket not found</div>;
+    }
 
     return (
-      <>
-      <div className="rocketDetail-container">
-                <RocketsDetail
-                  name={data.name}
-                  flickr_images={data.flickr_images}
-                  height_meters= {data.height.meters}
-                  // diameter_meters= {data.diameter.meters}
-                  // mass_kg= {data.mass.kg}
-                  // first_stage_reusable= {data.first_stage.reusable}
-                  // first_stage_fuel_amount_tons= {data.first_stage.fuel_amount_tons}
-                  // second_stage_payloads_composite_fairing_height= {data.second_stage.payloads.composite_fairing.height.meters}
-                  // second_stage_payloads_composite_fairing_diameter= {data.second_stage.payloads.composite_fairing.diameter.meters}
-                  // second_stage_reusable= {data.second_stage.reusable}
-                  // second_stage_fuel_amount_tons= {data.second_stage.fuel_amount_tons}
-                />
+      <div className="slide">
+        <div className="rocket-card">
+          <h2>{rocket.name}</h2>
+          <p>{rocket.height.meters} m</p>
+          <p>{rocket.diameter.meters} m</p>
+          <p>{rocket.mass.kg} kg</p>
+          <p>1er étage, réutilisable: {rocket.first_stage.reusable}</p>
+          <p>1er étage, carburant consommé: {rocket.first_stage.fuel_amount_tons} tonnes</p>
+          <p>2ème étage, {rocket.second_stage.payloads.composite_fairing.height.meters} m</p>
+          <p>2ème étage, {rocket.second_stage.payloads.composite_fairing.diameter.meters} m</p>
+          <p>2ème étage, réutilisable: {rocket.second_stage.reusable}</p>
+          <p>2ème étage, carburant consommé: {rocket.second_stage.fuel_amount_tons} tonnes</p>
         </div>
-      </>
+      </div>
     );
   };
 
   return (
     <Fetcher
-    url={`https://api.spacexdata.com/v4/rockets/${id}`}
+      url="https://api.spacexdata.com/v4/rockets"
       render={renderRocketsDetail}
     />
   );
