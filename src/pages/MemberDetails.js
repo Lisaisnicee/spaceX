@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Fetcher from "../component/fetcher";
 import DisplayCrew from "../component/displayCrew";
 import "../styles/css/viewDetails.css";
@@ -26,6 +26,8 @@ const MemberDetails = () => {
             <p className="card__content-status">
               {member.status ? "Active" : "Inactive"}
             </p>
+            
+            <Link to={member.wikipedia} className="card__content-link">En savoir plus sur {member.name}</Link>
           </div>
         </div>
       </div>

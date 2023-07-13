@@ -63,12 +63,13 @@ body {
 }
 
 .card__content-link {
-  color: #ba3428;
+  color: #2c23d3;
   font-size: 1.8vmin;
   display: block;
   cursor: pointer;
   opacity: 0.7;
   transition: opacity 0.3s ease;
+  margin-top: 85%;
 }
 
 .card__content-link:hover {
@@ -151,5 +152,5 @@ body {
 
 .card__content-status {
   font-size: 1.2vmin;
-  color: #888888;
+  color: #2c23d3;
 }

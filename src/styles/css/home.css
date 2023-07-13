@@ -43,16 +43,7 @@ left: 50%; /* Adjust the horizontal position */
 }
 
 
-
-
-
-
-
-
-  
-
-
-a {
+/* a {
   text-decoration: none;
   color: white;
   
@@ -62,9 +53,8 @@ a {
   margin-right: 30px;
 }
 a:hover {
-  /* background-color: rgb(195, 49, 49); */
   color: black;
-}
+} */
 #img1 {
   background-image: url("https://cdn.mos.cms.futurecdn.net/wy9zTJwpStDmzfpXatxPzA-970-80.jpg.webp");
 }
