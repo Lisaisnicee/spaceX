@@ -23,9 +23,10 @@ const Main = () => {
               <h5>ASTRONAUTES</h5>
             </div>
             <div className="block">
-              <a href="/">
-                <div id="img2"></div>
-              </a>
+            
+              <a href="/rockets">
+                <div id="img2"></div> </a>
+              
               <h5>LANCEMENTS</h5>
             </div>
             <div className="block">

@@ -5,18 +5,8 @@ import "../styles/css/about.css";
 
 const About = () => {
   const renderAbout = ({ data }) => {
-    
-
     return (
-
-
-
-
       <>
-
-
-
-
 
 <div class="page-wrapper">
   <aside>
@@ -42,44 +32,10 @@ const About = () => {
   <div class="line"> <p>VALUATION: {data.valuation}</p></div>
   </div>
   <div class="photographer">
-
-
-
-
-
   </div>
-  
-
   <div class="image"></div>
 </article>
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
       </>
     );
   };

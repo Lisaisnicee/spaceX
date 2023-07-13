@@ -4,7 +4,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #000000c6;
+  background-color: #040404;
 }
 nav {
   display: flex;
@@ -12,7 +12,7 @@ nav {
   align-items: center;
 }
 #bg {
-  background-image: url("https://wallpapers-hub.art/wallpaper-images/1572.jpg");
+  background-image: url("https://images.unsplash.com/photo-1544942579-9671c890fe89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1960&q=80");
   color: white;
   width: 100%;
   height: 100%;
@@ -24,7 +24,7 @@ nav {
 }
 @font-face {
     font-family: 'SpaceX';
-    src: './styles/css/SpaceX.tff';
+    src: './SpaceX';
          
    
     font-weight: normal;
@@ -81,7 +81,7 @@ a:hover {
   width: 100%;
   height: 90%;
   padding-top: 1px;
-  background-color:#000000c6;
+
    margin-top: 150px; 
    margin-bottom: 50px; 
 }

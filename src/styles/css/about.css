@@ -31,7 +31,7 @@
   
   @media (min-width: 700px) {
     aside {
-        background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Astronaut-Desktop-Wallpaper.jpg"); /* Replace with the path to your image */
+        background-image: url("https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
