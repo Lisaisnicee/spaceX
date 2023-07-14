@@ -1,0 +1,53 @@
+[
+    {
+      "title": "Which movie features a character named 'Luke Skywalker'?",
+      "options": ["Star Trek", "Guardians of the Galaxy", "Star Wars", "Interstellar"],
+      "correctOptionIndex": 2
+    },
+    {
+      "title": "In the movie '2001: A Space Odyssey', what is the name of the supercomputer?",
+      "options": ["HAL 9000", "TARS", "V.I.K.I.", "Cortana"],
+      "correctOptionIndex": 0
+    },
+    {
+      "title": "Which movie depicts the story of an astronaut stranded on Mars?",
+      "options": ["Apollo 13", "The Martian", "Gravity", "Armageddon"],
+      "correctOptionIndex": 1
+    },
+    {
+      "title": "Which space-themed movie features a character named 'Ellen Ripley'?",
+      "options": ["Blade Runner", "E.T. the Extra-Terrestrial", "Alien", "Contact"],
+      "correctOptionIndex": 2
+    },
+    {
+      "title": "Which movie explores the concept of time dilation near a black hole?",
+      "options": ["Moon", "Inception", "Interstellar", "The Matrix"],
+      "correctOptionIndex": 2
+    },
+    {
+      "title": "In the movie 'Gravity', who plays the role of Dr. Ryan Stone?",
+      "options": ["Sandra Bullock", "Natalie Portman", "Jennifer Lawrence", "Scarlett Johansson"],
+      "correctOptionIndex": 0
+    },
+    {
+      "title": "Which movie features a group of misfit space adventurers known as the 'Guardians of the Galaxy'?",
+      "options": ["Star Wars: Episode IV - A New Hope", "The Hitchhiker's Guide to the Galaxy", "Guardians of the Galaxy", "Star Trek"],
+      "correctOptionIndex": 2
+    },
+    {
+      "title": "Which space-related movie is based on the true story of the Apollo 13 mission?",
+      "options": ["Apollo 13", "Sunshine", "Moon", "The Right Stuff"],
+      "correctOptionIndex": 0
+    },
+    {
+      "title": "In the movie 'Interstellar', who directed the film?",
+      "options": ["Steven Spielberg", "Christopher Nolan", "James Cameron", "Ridley Scott"],
+      "correctOptionIndex": 1
+    },
+    {
+      "title": "Which space-themed movie features a character named 'Dr. David Bowman'?",
+      "options": ["Solaris", "WALL-E", "2001: A Space Odyssey", "Star Trek: The Motion Picture"],
+      "correctOptionIndex": 2
+    }
+  ]
+  

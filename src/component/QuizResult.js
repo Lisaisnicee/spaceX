@@ -18,7 +18,7 @@ const QuizResult = ({ result, retry }) => {
     <div className="result-screen">
       <h2>Score: {result.percentage}%</h2>
       <p>{scoreMessage}</p>
-      {/* <button onClick={retry}>RETRY</button> */}
+      {/* <button onClick=="/quiz">RETRY</button> */}
       {/* should add a button to return to the quiz page.. */}
     </div>
   );

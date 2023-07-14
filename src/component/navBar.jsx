@@ -38,8 +38,8 @@ const NavBar = () => {
               </div>
             )}
           </li>
-          <li className={location.pathname === '/quizz' ? 'header-li active' : 'header-li'}>
-            <Link to="/quizz">Quizz</Link>
+          <li className={location.pathname === '/quiz' ? 'header-li active' : 'header-li'}>
+            <Link to="/quiz">Quizz</Link>
           </li>
           <li className={location.pathname === '/about' ? 'header-li active' : 'header-li'}>
             <Link to="/about">À propos</Link>

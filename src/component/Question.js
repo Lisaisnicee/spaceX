@@ -95,7 +95,7 @@ const AnswerScreen = ({ isCorrect, correctOptionIndex }) => {
 
       {isCorrect ? 'Correct!' : 'Wrong!'}
       <div className="correct-answer">
-        Correct answer: <span>{correctOptionIndex}</span>
+        Correct answer: <span>{correctOptionIndex+1}</span>
       </div>
     </div>
   );

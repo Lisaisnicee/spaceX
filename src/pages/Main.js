@@ -1,5 +1,6 @@
 import Navigation from '../layout/navigation';
 import "../styles/css/home.css";
+
 const Main = () => {
   return (
     <>

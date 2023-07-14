@@ -1,0 +1,53 @@
+[
+    {
+      "title": "What is the largest planet in our solar system?",
+      "options": ["Jupiter", "Saturn", "Neptune", "Uranus"],
+      "correctOptionIndex": 0
+    },
+    {
+      "title": "Which star is closest to our solar system?",
+      "options": ["Proxima Centauri", "Alpha Centauri A", "Alpha Centauri B", "Sirius"],
+      "correctOptionIndex": 0
+    },
+    {
+      "title": "How many moons does Mars have?",
+      "options": ["0", "1", "2", "5"],
+      "correctOptionIndex": 2
+    },
+    {
+      "title": "What is the name of the largest known volcano in our solar system?",
+      "options": ["Mauna Loa", "Olympus Mons", "Mount Vesuvius", "Mount Everest"],
+      "correctOptionIndex": 1
+    },
+    {
+      "title": "Which planet has the most rings?",
+      "options": ["Saturn", "Uranus", "Jupiter", "Neptune"],
+      "correctOptionIndex": 0
+    },
+    {
+      "title": "What is the estimated age of the universe?",
+      "options": ["10,000 years", "1 million years", "1 billion years", "13.8 billion years"],
+      "correctOptionIndex": 3
+    },
+    {
+      "title": "Which astronaut holds the record for the longest total time spent in space?",
+      "options": ["Yuri Gagarin", "Buzz Aldrin", "Valeri Polyakov", "Scott Kelly"],
+      "correctOptionIndex": 2
+    },
+    {
+      "title": "How many Earths could fit inside the sun?",
+      "options": ["100", "1,000", "10,000", "1 million"],
+      "correctOptionIndex": 3
+    },
+    {
+      "title": "What is the fastest-moving planet in our solar system?",
+      "options": ["Mercury", "Mars", "Venus", "Jupiter"],
+      "correctOptionIndex": 0
+    },
+    {
+      "title": "Which space probe was the first to visit Pluto?",
+      "options": ["Cassini-Huygens", "Voyager 2", "New Horizons", "Galileo"],
+      "correctOptionIndex": 2
+    }
+  ]
+  

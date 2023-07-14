@@ -1,0 +1,52 @@
+[
+  {
+    "title": "What is the largest planet in our solar system?",
+    "options": ["Mercury", "Venus", "Earth", "Jupiter"],
+    "correctOptionIndex": 3
+  },
+  {
+    "title": "Which planet is known for its beautiful rings?",
+    "options": ["Mars", "Saturn", "Neptune", "Uranus"],
+    "correctOptionIndex": 1
+  },
+  {
+    "title": "Which planet is considered Earth's twin?",
+    "options": ["Venus", "Mars", "Jupiter", "Pluto"],
+    "correctOptionIndex": 0
+  },
+  {
+    "title": "What is the largest moon in our solar system?",
+    "options": ["Ganymede", "Titan", "Europa", "Luna"],
+    "correctOptionIndex": 0
+  },
+  {
+    "title": "Which planet is known for its red color?",
+    "options": ["Neptune", "Jupiter", "Mars", "Uranus"],
+    "correctOptionIndex": 2
+  },
+  {
+    "title": "What is the name of the first human-made satellite launched into space?",
+    "options": ["Sputnik 1", "Vostok 1", "Apollo 11", "Hubble Space Telescope"],
+    "correctOptionIndex": 0
+  },
+  {
+    "title": "Which spacecraft was the first to land humans on the moon?",
+    "options": ["Apollo 11", "Voyager 1", "Cassini-Huygens", "Curiosity"],
+    "correctOptionIndex": 0
+  },
+  {
+    "title": "What is the name of the brightest star in the night sky?",
+    "options": ["Alpha Centauri", "Betelgeuse", "Sirius", "Proxima Centauri"],
+    "correctOptionIndex": 2
+  },
+  {
+    "title": "What is the name of the largest volcano in the solar system?",
+    "options": ["Mount Everest", "Mauna Loa", "Olympus Mons", "Mount Kilimanjaro"],
+    "correctOptionIndex": 2
+  },
+  {
+    "title": "Which space agency successfully landed the Perseverance rover on Mars in 2021?",
+    "options": ["NASA", "ESA", "Roscosmos", "ISRO"],
+    "correctOptionIndex": 0
+  }
+]

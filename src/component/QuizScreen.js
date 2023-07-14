@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import QuestionList from "../data/questionList.json";
+
 import '../styles/css/quizz.css';
 import Question from "../component/Question.js"
 import QuizResult from "../component/QuizResult.js"
 
-const QuizScreen = ({ retry }) => {
+const QuizScreen = ({ retry, questionList }) => {
+  console.log("print questions"+questionList);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [markedAnswers, setMarkedAnswers] = useState(new Array(QuestionList.length).fill(null));
-  const isQuestionEnd = currentQuestionIndex === QuestionList.length;
+  const [markedAnswers, setMarkedAnswers] = useState(new Array(questionList.length).fill(null));
+  const isQuestionEnd = currentQuestionIndex === questionList.length;
 
   function calculateResult() {
     let correct = 0;
-    QuestionList.map((question, index) => {
+    questionList.map((question, index) => {
       console.log("came here");
       console.log("question.correctOptionIndex" + question.correctOptionIndex);
       console.log("markedAnswers[index]" + markedAnswers[index]);
@@ -22,9 +23,9 @@ const QuizScreen = ({ retry }) => {
     });
     console.log("whats correct?" + correct);
     return {
-      total: QuestionList.length,
+      total: questionList.length,
       correct: correct,
-      percentage: Math.trunc((correct / QuestionList.length) * 100)
+      percentage: Math.trunc((correct / questionList.length) * 100)
     };
   }
 
@@ -47,8 +48,8 @@ const QuizScreen = ({ retry }) => {
 
         ) : (
           <Question
-            question={QuestionList[currentQuestionIndex]}
-            totalQuestions={QuestionList.length}
+            question={questionList[currentQuestionIndex]}
+            totalQuestions={questionList.length}
             currentQuestionIndex={currentQuestionIndex + 1}
             setAnswer={goToNextQuestion}
           />

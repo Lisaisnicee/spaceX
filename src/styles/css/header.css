@@ -20,14 +20,11 @@ body {
     ul, li, h1, h2, h3, h4, h5, h6, p, a, .logo {
   
       font-family: "Lato","Verdana",sans-serif;
-  
+  padding-top: 50px;
    
   
       font-weight: 400;
   
-      margin: 0;
-  
-      padding: 0;
   
     }
   
@@ -38,7 +35,7 @@ body {
       /* width: 900px;
    */
       position: relative;
-  
+  padding-left : 100px;
       margin: 0 auto;
       z-index: 999;
     }
@@ -75,7 +72,9 @@ body {
   
     }
   
-   
+    .header-ul {
+        padding-top: 0px;
+    }
   
     body.header-fixed header {
   
@@ -113,17 +112,23 @@ body {
   
     nav ul {
   
-      float: right;
+      float: center;
   
     }
-  
+    .navbar-log {
+        width: 200px; /* Adjust the width as needed */
+        height: auto; /* Let the height adjust automatically */
+        margin-top: 15px; /* Adjust the margin-top value as needed */
+      }
+      
+      
    
   
     nav li {
   
       display: inline;
   
-      float: left;
+    
   
     }
   
