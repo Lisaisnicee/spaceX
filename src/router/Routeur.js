@@ -8,6 +8,10 @@ import About from "../pages/About";
 import NoMatch from "./NoMatch";
 import ViewRockets from "../pages/rockets";
 import ViewRocketsDetail from "../pages/rocketsDetail";
+import ViewRoadster from "../pages/ViewRoadster";
+import ViewLastlaunch from "../pages/ViewLastlaunch";
+import Navigation from "../layout/navigation";
+
 
 
 
@@ -15,7 +19,7 @@ import ViewRocketsDetail from "../pages/rocketsDetail";
 const Routeur = () => {
   return (
     <BrowserRouter>
-
+   <Navigation>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/viewCrew" element={<ViewCrew />} />
@@ -26,10 +30,15 @@ const Routeur = () => {
           <Route path="/rockets" element={<ViewRockets />} />
           <Route path="/rockets/:id" element={<ViewRocketsDetail />} />
           <Route path="/quiz" element={<Quiz />} />
+          <Route path="/rockets" element={<ViewRockets />} />
+          <Route path="/rockets/:id" element={<ViewRocketsDetail />} />
+          <Route path="/roadster" element={<ViewRoadster />} />
+          <Route path="/lastlaunch" element={<ViewLastlaunch />} />
+          <Route path="/rockets/*" element={<NoMatch />} /> 
           <Route path="*" element={<NoMatch />} /> 
 
         </Routes>
-    
+        </Navigation>
     </BrowserRouter>
   );
 };

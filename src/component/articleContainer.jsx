@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/css/main.css";
+
 
 const ArticleContainer = ({ title, event_date_utc, event_date_unix, details, link }) => {
     const linkStyle = {

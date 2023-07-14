@@ -9,9 +9,9 @@ const JoinScreen = ({start}) => {
     <>
       <div className="quizz-container">
         <h1>READY TO TAKE THE QUIZZ ?</h1>
-        <Link to="/quiz">
+       <div> <Link to="/quiz">
           <button onClick={start}>START</button>
-        </Link>
+        </Link></div>
       </div>
     </>
   );

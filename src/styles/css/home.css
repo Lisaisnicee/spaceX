@@ -112,7 +112,7 @@ a:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: white;
+  color: rgb(255, 230, 39);
   font-weight: 400;
   text-transform: uppercase;
   font-family: "Zen Dots", cursive;

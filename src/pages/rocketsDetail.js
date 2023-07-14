@@ -14,20 +14,30 @@ const ViewRocketsDetail = () => {
     }
 
     return (
-      <div className="slide">
-        <div className="rocket-card">
+      <>
+      <div className="rocket-detail-conainter">
+        <div className="rocketdetail-card">
           <h2>{rocket.name}</h2>
-          <p>{rocket.height.meters} m</p>
-          <p>{rocket.diameter.meters} m</p>
-          <p>{rocket.mass.kg} kg</p>
-          <p>1er étage, réutilisable: {rocket.first_stage.reusable}</p>
-          <p>1er étage, carburant consommé: {rocket.first_stage.fuel_amount_tons} tonnes</p>
-          <p>2ème étage, {rocket.second_stage.payloads.composite_fairing.height.meters} m</p>
-          <p>2ème étage, {rocket.second_stage.payloads.composite_fairing.diameter.meters} m</p>
-          <p>2ème étage, réutilisable: {rocket.second_stage.reusable}</p>
-          <p>2ème étage, carburant consommé: {rocket.second_stage.fuel_amount_tons} tonnes</p>
+          <div className="rocket-info">
+            <p className="rocket-text">Hauteur {rocket.height.meters} m</p>
+            <p className="rocket-text">Largeur {rocket.diameter.meters} m</p>
+            <p className="rocket-text">Poid {rocket.mass.kg} kg</p>
+          </div>
+        </div>
+        <div className="rocketdetail-card">
+          <p className="rocket-text">Pays d'origine {rocket.country}</p>
+          <p className="rocket-text">Entreprise {rocket.company}</p>
+          <p className="rocket-text">Premier vol {rocket.first_flight}</p>
+          <p className="rocket-text">Description {rocket.description}</p>
         </div>
       </div>
+      <div className="rocketdetail-image">
+        {rocket.flickr_images.map((item, index) => (
+          <img src={item} alt="fusée" />
+        ))}
+      </div>
+      <p>.</p>
+      </>
     );
   };
 

@@ -10,7 +10,7 @@ const Main = () => {
       <body>
         <div id="bg">
           <nav>
-            <h3>SpaceX</h3>
+            
           </nav>
           <h1 id="nasa">SPACE X</h1>
         </div>
@@ -30,7 +30,7 @@ const Main = () => {
               <h5>LANCEMENTS</h5>
             </div>
             <div className="block">
-              <a href="articles">
+              <a href="/articles">
                 <div id="img3"></div>
               </a>
               <h5>CHRONOLOGIE</h5>
