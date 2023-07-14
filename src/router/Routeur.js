@@ -1,19 +1,19 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Main from "../pages/Main";
-import ViewCrew from "../pages/viewCrew";
-import MemberDetails from "../pages/MemberDetails";
-import ViewArticle from "../pages/ViewArticle";
-import About from "../pages/About";
-import NoMatch from "./NoMatch";
-import ViewRockets from "../pages/rockets";
-import ViewRocketsDetail from "../pages/rocketsDetail";
-import ViewRoadster from "../pages/ViewRoadster";
-import ViewLastlaunch from "../pages/ViewLastlaunch";
-import Navigation from "../layout/navigation";
-import Quiz from "../pages/Quiz";
-import Quiz1 from "../pages/Quiz1";
-import Quiz2 from "../pages/Quiz2";
-import Quiz3 from "../pages/Quiz3";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from '../pages/Main';
+import ViewCrew from '../pages/viewCrew';
+import MemberDetails from '../pages/MemberDetails';
+import ViewArticle from '../pages/ViewArticle';
+import About from '../pages/About';
+import NoMatch from './NoMatch';
+import ViewRockets from '../pages/rockets';
+import ViewRocketsDetail from '../pages/rocketsDetail';
+import ViewRoadster from '../pages/ViewRoadster';
+import ViewLastlaunch from '../pages/ViewLastlaunch';
+import Navigation from '../layout/navigation';
+import Quiz from '../pages/Quiz';
+import Quiz1 from '../pages/Quiz1';
+import Quiz2 from '../pages/Quiz2';
+import Quiz3 from '../pages/Quiz3';
 
 const Routeur = () => {
   return (
@@ -29,10 +29,10 @@ const Routeur = () => {
           <Route path="/rockets/:id" element={<ViewRocketsDetail />} />
           <Route path="/roadster" element={<ViewRoadster />} />
           <Route path="/lastlaunch" element={<ViewLastlaunch />} />
-          <Route path="/quiz" element={<Quiz />} /> 
-          <Route path="/quiz/1" element={<Quiz1 />} /> 
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/quiz/1" element={<Quiz1 />} />
           <Route path="/quiz/2" element={<Quiz2 />} />
-          <Route path="/quiz/3" element={<Quiz3 />} /> 
+          <Route path="/quiz/3" element={<Quiz3 />} />
           <Route path="/rockets/*" element={<NoMatch />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>

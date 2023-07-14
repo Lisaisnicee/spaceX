@@ -5,8 +5,8 @@ const ViewCrew = () => {
   return (
     <>
       <div>
-       <h1>Nos astronautes</h1>
-       <SearchC />
+        <h1>Nos astronautes</h1>
+        <SearchC />
       </div>
     </>
   );

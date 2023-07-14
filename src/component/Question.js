@@ -2,7 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { flushSync } from 'react-dom';
 import '../styles/css/quizz.css';
 
-const Question = ({ question, totalQuestions, currentQuestionIndex, setAnswer }) => {
+const Question = ({
+  question,
+  totalQuestions,
+  currentQuestionIndex,
+  setAnswer,
+}) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [showAnswerScreen, setShowAnswerScreen] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
@@ -26,7 +31,6 @@ const Question = ({ question, totalQuestions, currentQuestionIndex, setAnswer })
       clearTimeout(timer.current);
     }
     flushSync(() => {
-      
       setAnswer(selectedOption);
     });
     setSelectedOption(null);
@@ -34,18 +38,15 @@ const Question = ({ question, totalQuestions, currentQuestionIndex, setAnswer })
   };
 
   const checkAnswer = (indexSelected) => {
-   
     const isOptionCorrect = indexSelected == question.correctOptionIndex;
-    if(isOptionCorrect == true) {
+    if (isOptionCorrect == true) {
       setIsCorrect(isOptionCorrect, true);
+    } else {
+      setIsCorrect(isOptionCorrect, false);
     }
-else { 
-  setIsCorrect(isOptionCorrect, false);
-}
   };
 
   const handleOptionClick = (optionIndex) => {
-    
     setSelectedOption(optionIndex);
     setShowAnswerScreen(true);
     checkAnswer(optionIndex);
@@ -82,20 +83,21 @@ else {
         )}
       </div>
       {showAnswerScreen && (
-        <AnswerScreen isCorrect={isCorrect} correctOptionIndex={question.correctOptionIndex} />
+        <AnswerScreen
+          isCorrect={isCorrect}
+          correctOptionIndex={question.correctOptionIndex}
+        />
       )}
     </div>
   );
 };
 
 const AnswerScreen = ({ isCorrect, correctOptionIndex }) => {
- 
   return (
     <div className="answer-screen">
-
       {isCorrect ? 'Correct!' : 'Wrong!'}
       <div className="correct-answer">
-        Correct answer: <span>{correctOptionIndex+1}</span>
+        Correct answer: <span>{correctOptionIndex + 1}</span>
       </div>
     </div>
   );

@@ -13,23 +13,41 @@ const NavBar = () => {
   return (
     <div className="inner">
       <div className="logo">
-        <img className="navbar-log" src="https://cdn.worldvectorlogo.com/logos/spacex.svg" alt="spacex logo" />
+        <img
+          className="navbar-log"
+          src="https://cdn.worldvectorlogo.com/logos/spacex.svg"
+          alt="spacex logo"
+        />
       </div>
       <nav className="header-nav" role="navigation">
         <ul className="header-ul">
-          <li className={location.pathname === '/' ? 'header-li active' : 'header-li'}>
+          <li
+            className={
+              location.pathname === '/' ? 'header-li active' : 'header-li'
+            }
+          >
             <Link to="/">Accueil</Link>
           </li>
-          <li className={location.pathname === '/viewCrew' ? 'header-li active' : 'header-li'}>
+          <li
+            className={
+              location.pathname === '/viewCrew'
+                ? 'header-li active'
+                : 'header-li'
+            }
+          >
             <Link to="/viewCrew">Membres</Link>
           </li>
-          <li className={location.pathname === '/articles' ? 'header-li active' : 'header-li'}>
+          <li
+            className={
+              location.pathname === '/articles'
+                ? 'header-li active'
+                : 'header-li'
+            }
+          >
             <Link to="/articles">Chronologie</Link>
           </li>
-          <li
-            onClick={handleDropdownToggle}
-          >
-            <span className='title-dropdown'>Lancement</span>
+          <li onClick={handleDropdownToggle}>
+            <span className="title-dropdown">Lancement</span>
             {isDropdownOpen && (
               <div className="dropdown-menu">
                 <Link to="/rockets">Rockets</Link>
@@ -38,10 +56,18 @@ const NavBar = () => {
               </div>
             )}
           </li>
-          <li className={location.pathname === '/quiz' ? 'header-li active' : 'header-li'}>
+          <li
+            className={
+              location.pathname === '/quiz' ? 'header-li active' : 'header-li'
+            }
+          >
             <Link to="/quiz">Quizz</Link>
           </li>
-          <li className={location.pathname === '/about' ? 'header-li active' : 'header-li'}>
+          <li
+            className={
+              location.pathname === '/about' ? 'header-li active' : 'header-li'
+            }
+          >
             <Link to="/about">À propos</Link>
           </li>
         </ul>

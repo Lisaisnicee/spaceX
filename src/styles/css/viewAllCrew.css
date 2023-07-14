@@ -1,106 +1,96 @@
-
-
 html,
 body {
   height: 100%;
   background-color: #000001;
-  font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+  font-family: 'Segoe UI', 'Segoe', Tahoma, Helvetica, Arial, sans-serif;
 }
 
 .container {
-    /* max-width: 900px; */
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    color : white;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    
-    margin-right: 20px;
-  }
-  
-  h2 {
-    margin-bottom: 5px;
-  }
-  
-  a {
-    color: #007bff;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
- 
- 
-  .search-bar {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .search-bar input[type="text"] {
-    width: 700px; 
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-  }
-  
-  .search-bar input[type="text"]::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-image: url(https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .search-bar input[type="text"]::placeholder {
-    color: #999999;
-  }
-  
-  .search-bar input[type="text"]:focus {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  }
+  /* max-width: 900px; */
+  margin: 0 auto;
+  padding: 20px;
+}
 
+h1 {
+  text-align: center;
+  color: white;
+}
 
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
-  
-  
-  
-  
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+
+  margin-right: 20px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input[type='text'] {
+  width: 700px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.search-bar input[type='text']::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search-bar input[type='text']::placeholder {
+  color: #999999;
+}
+
+.search-bar input[type='text']:focus {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 #root {
   display: flex;
   justify-content: center;
@@ -157,41 +147,27 @@ body {
 }
 
 .card-body > .text-wrapper {
-    padding: 2em;
-    font-family: 'Roboto';
-    background-color: rgb(15, 0, 86);
-    border-radius: 0 0 4px 4px;
-    height: 100px;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
- 
- 
- 
- 
- 
- 
-
+  padding: 2em;
+  font-family: 'Roboto';
+  background-color: rgb(15, 0, 86);
+  border-radius: 0 0 4px 4px;
+  height: 100px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .text-wrapper > .title {
-    font-size: 1em;
-    font-weight: bold;
-    color: blue;
-    margin-top: 0.5em; 
-    margin-bottom: .2em; 
-    line-height: 1.2;
-  }
-  
-
-
-
-
+  font-size: 1em;
+  font-weight: bold;
+  color: blue;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  line-height: 1.2;
+}
 
 .text-wrapper > .details {
   font-size: 0.8em;
   line-height: 1.7em;
- 
 }

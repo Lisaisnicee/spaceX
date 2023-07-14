@@ -41,7 +41,12 @@
   },
   {
     "title": "What is the name of the largest volcano in the solar system?",
-    "options": ["Mount Everest", "Mauna Loa", "Olympus Mons", "Mount Kilimanjaro"],
+    "options": [
+      "Mount Everest",
+      "Mauna Loa",
+      "Olympus Mons",
+      "Mount Kilimanjaro"
+    ],
     "correctOptionIndex": 2
   },
   {

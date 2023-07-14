@@ -1,53 +1,72 @@
 [
-    {
-      "title": "Which year was NASA established?",
-      "options": ["1955", "1961", "1969", "1973"],
-      "correctOptionIndex": 1
-    },
-    {
-      "title": "Who was the first person to walk on the moon?",
-      "options": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Alan Shepard"],
-      "correctOptionIndex": 1
-    },
-    {
-      "title": "What was the name of the first American space station launched by NASA?",
-      "options": ["Mir", "Skylab", "ISS", "Salyut 1"],
-      "correctOptionIndex": 1
-    },
-    {
-      "title": "Which NASA space shuttle exploded shortly after launch in 1986?",
-      "options": ["Atlantis", "Challenger", "Columbia", "Discovery"],
-      "correctOptionIndex": 1
-    },
-    {
-      "title": "Which space telescope, launched by NASA, has provided stunning images of the universe?",
-      "options": ["Hubble Space Telescope", "Kepler Space Telescope", "Chandra X-ray Observatory", "Spitzer Space Telescope"],
-      "correctOptionIndex": 0
-    },
-    {
-      "title": "Who was the first American woman to travel to space?",
-      "options": ["Sally Ride", "Valentina Tereshkova", "Kathryn Sullivan", "Mae Jemison"],
-      "correctOptionIndex": 0
-    },
-    {
-      "title": "Which mission was the final flight of NASA's space shuttle program?",
-      "options": ["STS-135", "STS-107", "STS-129", "STS-125"],
-      "correctOptionIndex": 0
-    },
-    {
-      "title": "Which NASA mission successfully landed the Curiosity rover on Mars?",
-      "options": ["Mars Pathfinder", "Mars Science Laboratory", "Mars Reconnaissance Orbiter", "Viking 1"],
-      "correctOptionIndex": 1
-    },
-    {
-      "title": "Which space probe, launched by NASA, was the first to visit Pluto?",
-      "options": ["Cassini-Huygens", "Voyager 2", "New Horizons", "Galileo"],
-      "correctOptionIndex": 2
-    },
-    {
-      "title": "Who was the first American astronaut to orbit the Earth?",
-      "options": ["John Glenn", "Alan Shepard", "Gus Grissom", "Wally Schirra"],
-      "correctOptionIndex": 0
-    }
-  ]
-  
+  {
+    "title": "Which year was NASA established?",
+    "options": ["1955", "1961", "1969", "1973"],
+    "correctOptionIndex": 1
+  },
+  {
+    "title": "Who was the first person to walk on the moon?",
+    "options": [
+      "Buzz Aldrin",
+      "Neil Armstrong",
+      "Yuri Gagarin",
+      "Alan Shepard"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "title": "What was the name of the first American space station launched by NASA?",
+    "options": ["Mir", "Skylab", "ISS", "Salyut 1"],
+    "correctOptionIndex": 1
+  },
+  {
+    "title": "Which NASA space shuttle exploded shortly after launch in 1986?",
+    "options": ["Atlantis", "Challenger", "Columbia", "Discovery"],
+    "correctOptionIndex": 1
+  },
+  {
+    "title": "Which space telescope, launched by NASA, has provided stunning images of the universe?",
+    "options": [
+      "Hubble Space Telescope",
+      "Kepler Space Telescope",
+      "Chandra X-ray Observatory",
+      "Spitzer Space Telescope"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "title": "Who was the first American woman to travel to space?",
+    "options": [
+      "Sally Ride",
+      "Valentina Tereshkova",
+      "Kathryn Sullivan",
+      "Mae Jemison"
+    ],
+    "correctOptionIndex": 0
+  },
+  {
+    "title": "Which mission was the final flight of NASA's space shuttle program?",
+    "options": ["STS-135", "STS-107", "STS-129", "STS-125"],
+    "correctOptionIndex": 0
+  },
+  {
+    "title": "Which NASA mission successfully landed the Curiosity rover on Mars?",
+    "options": [
+      "Mars Pathfinder",
+      "Mars Science Laboratory",
+      "Mars Reconnaissance Orbiter",
+      "Viking 1"
+    ],
+    "correctOptionIndex": 1
+  },
+  {
+    "title": "Which space probe, launched by NASA, was the first to visit Pluto?",
+    "options": ["Cassini-Huygens", "Voyager 2", "New Horizons", "Galileo"],
+    "correctOptionIndex": 2
+  },
+  {
+    "title": "Who was the first American astronaut to orbit the Earth?",
+    "options": ["John Glenn", "Alan Shepard", "Gus Grissom", "Wally Schirra"],
+    "correctOptionIndex": 0
+  }
+]

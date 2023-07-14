@@ -1,8 +1,8 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import Fetcher from "../component/fetcher";
-import DisplayCrew from "../component/displayCrew";
-import "../styles/css/viewDetails.css";
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import Fetcher from '../component/fetcher';
+import DisplayCrew from '../component/displayCrew';
+import '../styles/css/viewDetails.css';
 
 const MemberDetails = () => {
   const { id } = useParams();
@@ -24,7 +24,7 @@ const MemberDetails = () => {
             <h2 className="card__content-theme">{member.name}</h2>
             <p className="card__content-title">{member.agency}</p>
             <p className="card__content-status">
-              {member.status ? "Active" : "Inactive"}
+              {member.status ? 'Active' : 'Inactive'}
             </p>
           </div>
         </div>

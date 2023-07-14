@@ -7,9 +7,9 @@ import '../styles/css/quizz.css';
 const QuizResult = ({ result, retry }) => {
   let scoreMessage = '';
   if (result.percentage > 80) {
-    scoreMessage = "Wow, Elon Musk would be proud of you!";
+    scoreMessage = 'Wow, Elon Musk would be proud of you!';
   } else if (result.percentage > 60) {
-    scoreMessage = "So close but you could do so much better!";
+    scoreMessage = 'So close but you could do so much better!';
   } else {
     scoreMessage = "Try again, it's not too late!";
   }
@@ -23,6 +23,5 @@ const QuizResult = ({ result, retry }) => {
     </div>
   );
 };
-
 
 export default QuizResult;

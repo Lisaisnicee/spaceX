@@ -8,7 +8,7 @@ body {
 }
 
 #bg {
-  background-image: url("https://images.unsplash.com/photo-1544942579-9671c890fe89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1960&q=80");
+  background-image: url('https://images.unsplash.com/photo-1544942579-9671c890fe89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1960&q=80');
   color: white;
   width: 100%;
   height: 100%;
@@ -19,39 +19,27 @@ body {
   padding: 0;
 }
 @font-face {
-    font-family: 'SpaceX';
-    src: './SpaceX';
-         
-   
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'SpaceX';
+  src: './SpaceX';
+
+  font-weight: normal;
+  font-style: normal;
+}
 #nasa {
   text-align: center;
   margin-top: 300px;
   font-size: 6rem;
   letter-spacing: 30px;
   font-weight: 600;
-  font-family:  'SpaceX';
+  font-family: 'SpaceX';
   top: 100px; /* Adjust the vertical position */
-left: 50%; /* Adjust the horizontal position */
-  
+  left: 50%; /* Adjust the horizontal position */
 }
-
-
-
-
-
-
-
-
-  
-
 
 a {
   text-decoration: none;
   color: white;
-  
+
   padding: 10px 20px;
   border-radius: 5px;
   margin-top: 50px;
@@ -62,24 +50,24 @@ a:hover {
   color: black;
 }
 #img1 {
-  background-image: url("https://cdn.mos.cms.futurecdn.net/wy9zTJwpStDmzfpXatxPzA-970-80.jpg.webp");
+  background-image: url('https://cdn.mos.cms.futurecdn.net/wy9zTJwpStDmzfpXatxPzA-970-80.jpg.webp');
 }
 #img2 {
-  background-image: url("https://www.portdhiver.com/wp-content/uploads/2017/07/Launch.jpg");
+  background-image: url('https://www.portdhiver.com/wp-content/uploads/2017/07/Launch.jpg');
 }
 #img3 {
-  background-image: url("https://img.freepik.com/vecteurs-premium/ciel-etoile-space-stars-background-paillettes-scintillantes_160081-317.jpg?w=900");
+  background-image: url('https://img.freepik.com/vecteurs-premium/ciel-etoile-space-stars-background-paillettes-scintillantes_160081-317.jpg?w=900');
 }
 #img4 {
-  background-image: url("https://i0.wp.com/studentwork.prattsi.org/infovis/wp-content/uploads/sites/3/2021/02/spacex-tesmanian_1600x.jpg?resize=1024%2C576&ssl=1");
+  background-image: url('https://i0.wp.com/studentwork.prattsi.org/infovis/wp-content/uploads/sites/3/2021/02/spacex-tesmanian_1600x.jpg?resize=1024%2C576&ssl=1');
 }
 #content {
   width: 100%;
   height: 90%;
   padding-top: 1px;
 
-   margin-top: 150px; 
-   margin-bottom: 50px; 
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
 #inner {
   display: flex;
@@ -111,7 +99,7 @@ a:hover {
   color: rgb(255, 230, 39);
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Zen Dots", cursive;
+  font-family: 'Zen Dots', cursive;
   font-size: 15px;
   letter-spacing: 4px;
   transform: translate(-50%, -50%);
@@ -127,7 +115,7 @@ footer p {
   color: white;
   word-spacing: 2px;
   letter-spacing: 1px;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
 }
 footer {
   width: 100%;

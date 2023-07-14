@@ -8,11 +8,7 @@ const Quiz4 = () => {
 
   return (
     <div className="qcontainer">
-   
-        <QuizScreen questionList={questionList4} /> 
-    
-      
-      )
+      <QuizScreen questionList={questionList4} />)
     </div>
   );
 };

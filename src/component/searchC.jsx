@@ -15,7 +15,7 @@ const SearchC = () => {
     data.filter(
       (crew) =>
         crew.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        crew.agency.toLowerCase().includes(searchQuery.toLowerCase())
+        crew.agency.toLowerCase().includes(searchQuery.toLowerCase()),
     );
 
   return (
@@ -26,13 +26,21 @@ const SearchC = () => {
         placeholder="Search by name or agency"
       />
       <div className="container">
-        <Fetcher url="https://api.spacexdata.com/v4/crew" render={({ data }) => (
-          <ul className="image-list grid-view">
-            {filteredCrewList(data).map((item) => (
-              <DisplayCrew key={item.id} id={item.id} name={item.name} image={item.image} />
-            ))}
-          </ul>
-        )} />
+        <Fetcher
+          url="https://api.spacexdata.com/v4/crew"
+          render={({ data }) => (
+            <ul className="image-list grid-view">
+              {filteredCrewList(data).map((item) => (
+                <DisplayCrew
+                  key={item.id}
+                  id={item.id}
+                  name={item.name}
+                  image={item.image}
+                />
+              ))}
+            </ul>
+          )}
+        />
       </div>
     </>
   );

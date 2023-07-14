@@ -1,6 +1,6 @@
-import React from "react";
-import Fetcher from "../component/fetcher";
-import "../styles/css/lastlaunch.css";
+import React from 'react';
+import Fetcher from '../component/fetcher';
+import '../styles/css/lastlaunch.css';
 
 const ViewLastlaunch = () => {
   const renderLastLaunch = ({ data, loading, error }) => {
@@ -13,9 +13,7 @@ const ViewLastlaunch = () => {
         <p className="lastlaunch-text">{data.crew}</p>
         {data?.crew?.map((item, index) => (
           <div key={index}>
-            <p className="lastlaunch-text">
-              {item.crew}
-            </p>
+            <p className="lastlaunch-text">{item.crew}</p>
           </div>
         ))}
       </>
