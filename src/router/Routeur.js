@@ -14,6 +14,7 @@ import Quiz from '../pages/Quiz';
 import Quiz1 from '../pages/Quiz1';
 import Quiz2 from '../pages/Quiz2';
 import Quiz3 from '../pages/Quiz3';
+import Quiz4 from '../pages/Quiz4';
 
 const Routeur = () => {
   return (
@@ -33,6 +34,7 @@ const Routeur = () => {
           <Route path="/quiz/1" element={<Quiz1 />} />
           <Route path="/quiz/2" element={<Quiz2 />} />
           <Route path="/quiz/3" element={<Quiz3 />} />
+          <Route path="/quiz/4" element={<Quiz4 />} />
           <Route path="/rockets/*" element={<NoMatch />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>

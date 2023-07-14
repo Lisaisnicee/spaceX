@@ -1,6 +1,6 @@
 import React from 'react';
-import Fetcher from '../component/fetcher';
-import Rockets from '../component/rockets';
+import Fetcher from './../component/fetcher';
+import Rockets from './../component/rockets';
 import '../styles/css/rockets.css';
 
 const ViewRockets = () => {

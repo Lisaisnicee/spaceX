@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Fetcher from '../component/fetcher';
+import Fetcher from './../component/fetcher';
 import '../styles/css/rocketsDetail.css';
 
 const ViewRocketsDetail = () => {

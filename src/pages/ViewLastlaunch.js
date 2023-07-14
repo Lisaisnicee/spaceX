@@ -1,5 +1,5 @@
 import React from 'react';
-import Fetcher from '../component/fetcher';
+import Fetcher from './../component/fetcher';
 import '../styles/css/lastlaunch.css';
 
 const ViewLastlaunch = () => {
@@ -10,12 +10,16 @@ const ViewLastlaunch = () => {
         {console.log(data)}
         {console.log(data.crew)}
 
-        <p className="lastlaunch-text">{data.crew}</p>
-        {data?.crew?.map((item, index) => (
-          <div key={index}>
-            <p className="lastlaunch-text">{item.crew}</p>
-          </div>
-        ))}
+        {data.crew && (
+          <>
+            <p className="lastlaunch-text">Crew:</p>
+            {data.crew.map((item, index) => (
+              <div key={index}>
+                <p className="lastlaunch-text">{item.name}</p>
+              </div>
+            ))}
+          </>
+        )}
       </>
     );
   };
